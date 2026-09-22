@@ -1,12 +1,15 @@
 {
   "name": "@dsh-external/dsh-session-folders",
   "version": "0.3.1",
-  "description": "Session folders: organize sidebar conversations into nested, color-coded folders (context menu, drag-drop, batch select, colored tree guides)",
+  "description": "Session folders for the DSH Web sidebar - nest sessions into colored, icon-tagged folders with drag and drop, right-click and batch move. | 中文：DSH Web 侧栏会话分组：把会话整理进可嵌套、可自定义颜色图标的文件夹，支持拖拽、右键与批量移动。",
   "private": true,
   "type": "module",
   "main": "./lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
   ],
   "license": "MIT",
   "scripts": {
