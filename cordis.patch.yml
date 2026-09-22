@@ -1,0 +1,6 @@
+# dsh-session-folders bundle patch: 把插件挂载为 loader 入口（profile bundle 层）。
+# 背景：0.1.5 起 profile bundle 强校验，缺少 dsh.bundle 声明的条目会让整个 profile 拒绝启动。
+# 本文件使该插件可安全作为 bundle 装配；当前它仍走运行时注入，两者互不冲突。
+- insert:
+    - id: dsh-session-folders
+      name: '@dsh-external/dsh-session-folders'

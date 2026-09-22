@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.beacon.log
+*.bak
+*.bak-*
+.DS_Store
+._*
+*.tgz
