@@ -1,7 +1,7 @@
 {
   "name": "@dsh-external/dsh-session-folders",
   "version": "0.3.1",
-  "description": "Session folders for the DSH Web sidebar - nest sessions into colored, icon-tagged folders with drag and drop, right-click and batch move. | 中文：DSH Web 侧栏会话分组：把会话整理进可嵌套、可自定义颜色图标的文件夹，支持拖拽、右键与批量移动。",
+  "description": "Session folders for the DeepSeek Harness Web sidebar. | 中文：DSH Web 侧栏会话分组：可嵌套、可自定义颜色图标的文件夹。",
   "private": true,
   "type": "module",
   "main": "./lib/index.js",
@@ -38,5 +38,21 @@
       ],
       "platform": "web"
     }
-  }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sessions",
+    "folders"
+  ],
+  "homepage": "https://github.com/wakeup595626-cmyk/dsh-session-folders#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wakeup595626-cmyk/dsh-session-folders.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wakeup595626-cmyk/dsh-session-folders/issues"
+  },
+  "author": "wakeUp595626-cmyk"
 }
