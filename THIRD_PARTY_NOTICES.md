@@ -4,7 +4,7 @@ This project is distributed under the [MIT](LICENSE) license. The notes below co
 
 ## Runtime dependencies
 
-None  plain DOM against the DeepSeek Harness client runtime.
+None — plain DOM against the DeepSeek Harness client runtime.
 
 ## Build dependencies
 

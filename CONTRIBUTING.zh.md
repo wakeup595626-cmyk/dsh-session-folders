@@ -8,10 +8,10 @@
 
 ## 可以怎么贡献
 
-- **报告问题**  在 [GitHub Issues](https://github.com/wakeup595626-cmyk/dsh-session-folders/issues) 提交，请附上你的 DeepSeek Harness 版本、复现步骤，以及你期望的结果。
-- **提出需求**  欢迎描述你想解决的问题，而不只是你设想的方案。
-- **改进文档**  README 同时提供英文与中文两份，任何一侧的修正都欢迎。
-- **提交 PR**  见下文。
+- **报告问题** — 在 [GitHub Issues](https://github.com/wakeup595626-cmyk/dsh-session-folders/issues) 提交，请附上你的 DeepSeek Harness 版本、复现步骤，以及你期望的结果。
+- **提出需求** — 欢迎描述你想解决的问题，而不只是你设想的方案。
+- **改进文档** — README 同时提供英文与中文两份，任何一侧的修正都欢迎。
+- **提交 PR** — 见下文。
 
 ## 本地开发
 

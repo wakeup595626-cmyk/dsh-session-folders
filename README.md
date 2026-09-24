@@ -2,15 +2,15 @@
 
 English | [中文](README.zh.md)
 
-A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin that adds **session folders** to the Web sidebar  nest conversations into colour- and icon-tagged folders.
+A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin that adds **session folders** to the Web sidebar — nest conversations into colour- and icon-tagged folders.
 
 A folder tree is injected at the top of the session list (`ui-workspace`'s `treeBody`), rendered like a file manager.
 
-- **Organise**  folders support nesting, custom colour, custom icon and a remembered collapse state.
-- **Interact**  right-click "move to folder", drag a session onto a folder, and a batch-select mode for moving many at once.
-- **Hide**  grouped sessions are removed from the native list and rendered as their own rows inside their folder; clicking one opens it through `ctx.sessions.open`.
-- **Persist**  the host exposes read/change REST APIs (with optimistic concurrency via a monotonic `version`) writing to `~/.dsh/profiles/web/session-folders.json`.
-- **Clean**  pure DOM injection with zero dependencies; every side effect is disposed by a `ctx.effect` disposer, so unloading leaves nothing behind.
+- **Organise** — folders support nesting, custom colour, custom icon and a remembered collapse state.
+- **Interact** — right-click "move to folder", drag a session onto a folder, and a batch-select mode for moving many at once.
+- **Hide** — grouped sessions are removed from the native list and rendered as their own rows inside their folder; clicking one opens it through `ctx.sessions.open`.
+- **Persist** — the host exposes read/change REST APIs (with optimistic concurrency via a monotonic `version`) writing to `~/.dsh/profiles/web/session-folders.json`.
+- **Clean** — pure DOM injection with zero dependencies; every side effect is disposed by a `ctx.effect` disposer, so unloading leaves nothing behind.
 
 ## Install
 
