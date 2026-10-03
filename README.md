@@ -1,48 +1,48 @@
 # @dsh-external/dsh-session-folders
 
-English | [中文](README.zh.md)
+**中文** | [English](README.en.md)
 
-A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin that adds **session folders** to the Web sidebar — nest conversations into colour- and icon-tagged folders.
+为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web 侧栏添加**会话分组（文件夹）**：把对话整理进可嵌套、可自定义颜色与图标的文件夹。
 
-A folder tree is injected at the top of the session list (`ui-workspace`'s `treeBody`), rendered like a file manager.
+插件会在会话列表顶部（`ui-workspace` 的 `treeBody`）注入一棵文件夹树，像文件管理器一样分层渲染。
 
-- **Organise** — folders support nesting, custom colour, custom icon and a remembered collapse state.
-- **Interact** — right-click "move to folder", drag a session onto a folder, and a batch-select mode for moving many at once.
-- **Hide** — grouped sessions are removed from the native list and rendered as their own rows inside their folder; clicking one opens it through `ctx.sessions.open`.
-- **Persist** — the host exposes read/change REST APIs (with optimistic concurrency via a monotonic `version`) writing to `~/.dsh/profiles/web/session-folders.json`.
-- **Clean** — pure DOM injection with zero dependencies; every side effect is disposed by a `ctx.effect` disposer, so unloading leaves nothing behind.
+- **整理**：文件夹支持嵌套、自定义颜色、自定义图标与折叠状态记忆。
+- **交互**：右键菜单「移动到分组」、把会话拖拽到文件夹、以及批量选择模式。
+- **隐藏**：已分组的会话从原生列表移除，改为在文件夹内以自有行渲染；点击时通过 `ctx.sessions.open` 打开。
+- **持久化**：host 侧提供只读 / 变更 REST API（通过单调递增的 `version` 做乐观并发控制），数据写入 `~/.dsh/profiles/web/session-folders.json`。
+- **干净**：纯 DOM 注入、零依赖，所有副作用都由 `ctx.effect` disposer 清理，卸载即净。
 
-## Install
+## 安装
 
 ```sh
 dsh plugin --profile web add github:wakeup595626-cmyk/dsh-session-folders
 ```
 
-## Usage
+## 使用
 
-Open the Web UI and use the folder tree above the session list. The REST API is served at `/@dsh-external/dsh-session-folders/api`.
+打开 Web UI，使用会话列表上方的文件夹树。REST API 位于 `/@dsh-external/dsh-session-folders/api`。
 
-## Requirements
+## 环境要求
 
-- A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) installation with the `web` profile
+- 已安装 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)，并使用 `web` profile
 
-## Third-party notices
+## 第三方声明
 
-No third-party runtime dependencies. The client half is plain DOM against the DeepSeek Harness client runtime.
+无第三方运行时依赖；client 侧是针对 DeepSeek Harness client runtime 的原生 DOM 实现。
 
-See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+详见 [THIRD_PARTY_NOTICES.zh.md](THIRD_PARTY_NOTICES.zh.md)（[English](THIRD_PARTY_NOTICES.md)）。
 
-## Community and support
+## 社区与支持
 
-- Report bugs and ask questions through [GitHub Issues](https://github.com/wakeup595626-cmyk/dsh-session-folders/issues).
-- Add the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to your own plugin repository for discoverability.
-- Browse the wider ecosystem at [awesome-dsh-plugin.com](https://awesome-dsh-plugin.com).
+- 通过 [GitHub Issues](https://github.com/wakeup595626-cmyk/dsh-session-folders/issues) 报告问题与提问。
+- 为你自己的插件仓库添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) 话题，便于被发现。
+- 在 [awesome-dsh-plugin.com](https://awesome-dsh-plugin.com) 浏览更广阔的插件生态。
 
-## Contributing
+## 参与贡献
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+参见 [CONTRIBUTING.zh.md](CONTRIBUTING.zh.md)（[English](CONTRIBUTING.md)）。
 
-## Citation
+## 引用
 
 ```bibtex
 @misc{dsh-session-folders,
@@ -54,6 +54,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 }
 ```
 
-## License
+## 许可证
 
 [MIT](LICENSE)
